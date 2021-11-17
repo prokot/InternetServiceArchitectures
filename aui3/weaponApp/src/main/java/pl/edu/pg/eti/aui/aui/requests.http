@@ -1,0 +1,74 @@
+
+GET http://localhost:8082/api/weaponTypes/Katana/weapons
+
+###
+
+GET http://localhost:8082/api/weaponTypes/Katana/weapons/Zangetsu
+
+###
+GET http://localhost:8082/api/weapons
+
+###
+
+POST http://localhost:8082/api/weaponTypes/Zweihander/weapons
+Content-Type: application/json
+
+{
+  "name": "Flamberge",
+
+  "price": "123.1",
+
+  "weight": "1213.1",
+
+  "length": "23.1",
+
+  "material": "Steel"
+
+}
+
+###
+
+GET http://localhost:8082/api/weaponTypes/Zweihander/weapons/Flamberge
+
+###
+
+PUT http://localhost:8082/api/weaponTypes/Zweihander/weapons/Flamberge
+Content-Type: application/json
+
+{
+
+  "price": "17.1",
+
+  "weight": "28.1",
+
+  "length": "12.1",
+
+  "material": "Brass"
+
+}
+
+###
+DELETE http://localhost:8082/api/weapons/Flamberge
+
+###
+POST http://localhost:8082/api/weaponTypes/LongSword/weapons
+Content-Type: application/json
+
+{
+  "name": "KFC",
+
+  "price": "123.1",
+
+  "weight": "1213.1",
+
+  "length": "23.1",
+
+  "material": "Steel"
+
+}
+
+###
+
+GET http://localhost:8082/api/weaponTypes/LongSword/weapons/KFC
+
+###
