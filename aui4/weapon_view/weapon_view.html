@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Aui App web application"/>
+        <meta name="keywords" content="AUI"/>
+        <meta name="author" content="Mikołaj Prokop 180380"/>
+        <title>Aui App</title>
+        <link rel="stylesheet" href="../styles.css"/>
+        <link rel="stylesheet" href="weapon_view.css"/>
+        <script src="../script.js" defer="defer"></script>
+        <script type="module" src="weapon_view.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Aui App</h1>
+            </header>
+
+            <nav class="navigation-bar">
+                <ul>
+                    <li><a href="../index.html">main</a></li>
+                    <li><a href="../weapon_type_list/weapon_type_list.html">weaponTypes</a></li>
+                </ul>
+            </nav>
+
+            <section class="main-section">
+                <article class="text--justified">
+                    <header><h2 id="weaponName">weapon name</h2></header>
+                    <section>
+                        <h3>Details</h3>
+                        <div class="details-grid">
+                            <label for="name">Name:</label><span id="name">name</span>
+                            <label for="price">price:</label><span id="price">price</span>
+                            <label for="weight">weight:</label><span id="weight">weight</span>
+                            <label for="length">length:</label><span id="length">length</span>
+                            <label for="weaponType">weaponType:</label><span id="weaponType">weaponType</span>
+                        </div>
+                    </section>
+                </article>
+            </section>
+
+            <footer class="footer">
+                <p>Copyright &copy; 2021, Mikołaj Prokop</p>
+            </footer>
+        </div>
+    </body>
+</html>

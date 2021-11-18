@@ -29,7 +29,10 @@ function displayWeaponTypes(weaponTypes) {
 function createTableRow(weaponType) {
     let tr = document.createElement('tr');
     tr.appendChild(createTextCell(weaponType));
-    tr.appendChild(createLinkCell('view', '../weapon_type_view/weapon_type_view.html?weaponType=' + weaponType));
+    tr.appendChild(createLinkCell('view', '../weapon_type_view/weapon_type_view.html?weaponType=' 
+    + weaponType));
+    tr.appendChild(createLinkCell('edit', '../weapon_type_edit/weapon_type_edit.html?weaponType='
+    + weaponType));
     tr.appendChild(createButtonCell('delete', () => deleteWeaponTypes(weaponType)));
     return tr;
 }
@@ -39,7 +42,7 @@ function deleteWeaponTypes(weaponType) {
     const xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 202) {
-            fetchAndDisplayWeaponTypess();
+            fetchAndDisplayWeaponTypes();
         }
     };
     xhttp.open("DELETE", getBackendUrl() + '/api/weaponTypes/' + weaponType, true);

@@ -3,7 +3,7 @@ GET http://localhost:8080/api/weaponTypes/Katana/weapons
 
 ###
 
-GET http://localhost:8080/api/weaponTypes/Katana/weapons/Zangetsu
+GET http://localhost:8080/api/weaponTypes/Katana/weapons/Kaminishi%20No%20Yari
 
 ###
 GET http://localhost:8080/api/weapons

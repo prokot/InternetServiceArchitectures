@@ -25,6 +25,13 @@ export function createLinkCell(text, url) {
     return td;
 }
 
+export function createLink(text,url){
+    const a = document.createElement('a');
+    a.appendChild(document.createTextNode(text));
+    a.href = url;
+    return a;
+}
+
 
 export function createTextCell(text) {
     const td = document.createElement('td');

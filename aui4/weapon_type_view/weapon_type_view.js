@@ -4,7 +4,8 @@ import {
     createLinkCell,
     createButtonCell,
     createTextCell,
-    setTextNode
+    setTextNode,
+    createLink
 } from '../js/dom_utils.js';
 import {getBackendUrl} from '../js/configuration.js';
 
@@ -27,6 +28,10 @@ function fetchAndDisplayWeapons() {
 
 
 function displayWeapons(weapons) {
+    let newWeapon = document.getElementById("newWeapon");
+    clearElementChildren(newWeapon);
+    newWeapon.appendChild(createLink("Create new weapon.","../weapon_add/weapon_add.html?weaponType=" 
+    + getParameterByName("weaponType")));
     let tableBody = document.getElementById('tableBody');
     clearElementChildren(tableBody);
     weapons.weapons.forEach(weapon => {
@@ -38,6 +43,8 @@ function displayWeapons(weapons) {
 function createTableRow(weapon) {
     let tr = document.createElement('tr');
     tr.appendChild(createTextCell(weapon.name));
+    tr.appendChild(createLinkCell('view', '../weapon_view/weapon_view.html?weaponType='
+        + getParameterByName('weaponType') + '&weapon=' + weapon.name));
     tr.appendChild(createLinkCell('edit', '../weapon_edit/weapon_edit.html?weaponType='
         + getParameterByName('weaponType') + '&weapon=' + weapon.name));
     tr.appendChild(createButtonCell('delete', () => deleteWeapon(weapon.name)));
