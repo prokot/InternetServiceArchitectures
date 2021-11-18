@@ -1,0 +1,20 @@
+{
+  "name": "aui-app",
+  "version": "1.0.0-SNAPSHOT",
+  "description": "Aui App",
+  "keywords": [
+    "AUI"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prokot/InternetServiceArchitectures"
+  },
+  "license": "MIT",
+  "author": "Mikolaj Prokop",
+  "scripts": {
+    "dev": "http-server -p 8083 -c-1"
+  },
+  "devDependencies": {
+    "http-server": "0.12.3"
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Aui App web application"/>
+        <meta name="keywords" content="AUI"/>
+        <meta name="author" content="Mikołaj Prokop 180380"/>
+        <title>Aui App</title>
+        <link rel="stylesheet" href="../styles.css"/>
+        <link rel="stylesheet" href="weapon_type_view.css"/>
+        <script src="../script.js" defer="defer"></script>
+        <script type="module" src="weapon_type_view.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Aui App</h1>
+            </header>
+
+            <nav class="navigation-bar">
+                <ul>
+                    <li><a href="../index.html">main</a></li>
+                    <li><a href="../weapon_type_list/weapon_type_list.html">weaponTypes</a></li>
+                </ul>
+            </nav>
+
+            <section class="main-section">
+                <article class="text--justified">
+                    <header><h2 id="weaponTypeName">weapon type name</h2></header>
+                    <section>
+                        <h3>Details</h3>
+                        <div class="details-grid">
+                            <label for="name">Name:</label><span id="name">name</span>
+                            <label for="attackType">Attack Type:</label><span id="attackType">attackType</span>
+                            <label for="inventionYear">Invention Year:</label><span id="inventionYear">inventionYear</span>
+                        </div>
+                    </section>
+                    <section>
+                        <h3>Characters</h3>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>name</th>
+                                    <th>edit</th>
+                                    <th>delete</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                <tr>
+                                    <td><img src="#"/></td>
+                                    <td>name</td>
+                                    <td><a href="#">view</a></td>
+                                    <td><a href="#">edit</a></td>
+                                    <td>
+                                        <button class="ui-button ui-control">delete</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </article>
+            </section>
+
+            <footer class="footer">
+                <p>Copyright &copy; 2020, Michał (psysiu) Wójcik</p>
+            </footer>
+        </div>
+    </body>
+</html>

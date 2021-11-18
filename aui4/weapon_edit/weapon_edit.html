@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Aui App web application"/>
+        <meta name="keywords" content="AUI"/>
+        <meta name="author" content="Mikołaj Prokop 180380"/>
+        <title>Aui App</title>
+        <link rel="stylesheet" href="../styles.css"/>
+        <link rel="stylesheet" href="weapon_edit.css"/>
+        <script src="../script.js" defer="defer"></script>
+        <script type="module" src="weapon_edit.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Aui App</h1>
+            </header>
+
+            <nav class="navigation-bar">
+                <ul>
+                    <li><a href="../index.html">main</a></li>
+                    <li><a href="../weapon_type_list/weapon_type_list.html">weapon types</a></li>
+                </ul>
+            </nav>
+
+            <section class="main-section">
+                <article class="text--justified">
+                    <header><h2>Edit weapon info</h2></header>
+                    <form class="weapon__form" id="infoForm">
+                        <label for="price">price:</label>
+                        <input class="ui-control ui-input" id="price" name="price" type="number" step="any"/>
+                        <label for="weight">weight:</label>
+                        <input class="ui-control ui-input" id="weight" name="weight" type="number" step="any"/>
+                        <label for="length">length:</label>
+                        <input class="ui-control ui-input" id="length" name="length" type="number" step="any"/>
+                        <label for="material">material:</label>
+                        <textarea class="ui-control" id="material" name="material"></textarea>
+                        <input class="ui-control ui-button" type="submit" name="Update"/>
+                    </form>
+                </article>
+            </section>
+
+            <footer class="footer">
+            </footer>
+        </div>
+    </body>
+</html>
