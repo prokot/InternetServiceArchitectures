@@ -30,11 +30,11 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:8081/api/weaponTypes/Long%20Sword
+GET http://localhost:8081/api/weaponTypes/LongSword
 
 ###
 
-PUT http://localhost:8081/api/weaponTypes/Long%20Sword
+PUT http://localhost:8081/api/weaponTypes/LongSword
 Content-Type: application/json
 
 {
@@ -56,6 +56,6 @@ Content-Type: application/json
 ###
 DELETE http://localhost:8081/api/weaponTypes/Spade
 ###
-DELETE http://localhost:8081/api/weaponTypes/Long%20Sword
+DELETE http://localhost:8081/api/weaponTypes/LongSword
 ###
 DELETE http://localhost:8081/api/weaponTypes/Katana

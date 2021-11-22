@@ -72,3 +72,5 @@ Content-Type: application/json
 GET http://localhost:8082/api/weaponTypes/LongSword/weapons/KFC
 
 ###
+
+DELETE http://localhost:8082/api/weaponTypes/LongSword/weapons/KFC

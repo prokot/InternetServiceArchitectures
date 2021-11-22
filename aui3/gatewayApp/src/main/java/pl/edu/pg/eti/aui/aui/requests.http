@@ -48,4 +48,66 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:8080/api/weapons/Flamberge
+DELETE http://localhost:8080/api/weaponTypes/Zweihander/weapons/Flamberge
+
+###
+
+GET http://localhost:8080/api/weaponTypes
+###
+
+GET http://localhost:8080/api/weaponTypes/Katana
+
+###
+
+GET http://localhost:8080/api/weaponTypes/LongSword
+
+###
+
+POST http://localhost:8080/api/weaponTypes
+Content-Type: application/json
+
+{
+  "name": "LongSword",
+  "attackType": "Slash",
+  "inventionYear": "1985"
+}
+
+###
+
+POST http://localhost:8080/api/weaponTypes
+Content-Type: application/json
+
+{
+  "name": "Katana",
+  "attackType": "Slash",
+  "inventionYear": "1985"
+}
+
+###
+GET http://localhost:8080/api/weaponTypes/LongSword
+
+###
+
+PUT http://localhost:8080/api/weaponTypes/LongSword
+Content-Type: application/json
+
+{
+  "attackType": "Thrust",
+  "inventionYear": "1985"
+}
+
+###
+PUT http://localhost:8080/api/weaponTypes/Spade
+Content-Type: application/json
+
+{
+  "attackType": "Thrust",
+  "inventionYear": "1985"
+}
+
+###
+
+###
+DELETE http://localhost:8080/api/weaponTypes/Spade
+###
+DELETE http://localhost:8080/api/weaponTypes/LongSword
