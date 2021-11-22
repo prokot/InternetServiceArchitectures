@@ -27,7 +27,7 @@ POST http://localhost:8080/api/weaponTypes
 Content-Type: application/json
 
 {
-  "name": "Long Sword",
+  "name": "LongSword",
   "attackType": "Slash",
   "inventionYear": "1985"
 }
@@ -44,11 +44,11 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:8080/api/weaponTypes/Long%20Sword
+GET http://localhost:8080/api/weaponTypes/LongSword
 
 ###
 
-PUT http://localhost:8080/api/weaponTypes/Long%20Sword
+PUT http://localhost:8080/api/weaponTypes/LongSword
 Content-Type: application/json
 
 {
@@ -66,7 +66,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:8080/api/weaponTypes/Long%20Sword/weapons
+POST http://localhost:8080/api/weaponTypes/LongSword/weapons
 Content-Type: application/json
 
 {
@@ -84,11 +84,11 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:8080/api/weaponTypes/Long%20Sword/weapons/Flamberge
+GET http://localhost:8080/api/weaponTypes/LongSword/weapons/Flamberge
 
 ###
 
-PUT http://localhost:8080/api/weaponTypes/Long%20Sword/weapons/Flamberge
+PUT http://localhost:8080/api/weaponTypes/LongSword/weapons/Flamberge
 Content-Type: application/json
 
 {
@@ -104,8 +104,6 @@ Content-Type: application/json
 }
 ###
 DELETE http://localhost:8080/api/weaponTypes/Spade
-###
-DELETE http://localhost:8080/api/weaponTypes/Long%20Sword
 
 ###
 DELETE http://localhost:8080/api/weapons/Flamberge
